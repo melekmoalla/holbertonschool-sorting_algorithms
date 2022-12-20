@@ -3,11 +3,11 @@
 #include "sort.h"
 
 /**
- * print_array - Prints an array of integers
- *
+ * bubble_sort -  ascending order using the Bubble sort algorithm
  * @array: The array to be printed
  * @size: Number of elements in @array
  */
+
 void bubble_sort(int *array, size_t size)
 {
 	int temp;
