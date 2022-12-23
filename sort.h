@@ -32,5 +32,6 @@ void bubble_sort(int *array, size_t size);
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void quick_sort(int *array, size_t size);
-
+int partition(int *arr, int start, int end);
+void swap(int *arr, int i, int j);
 #endif
