@@ -4,6 +4,7 @@
 
 void quickk_sort(int *arr, size_t size)
 {
+
 	size_t i, j;
 	int temp;
 	for (i = 0; i < size - 3; i++)
@@ -25,5 +26,7 @@ void quickk_sort(int *arr, size_t size)
 }
 void quick_sort(int *arr, size_t size)
 {
+	if (arr == NULL)
+		return;
 	quickk_sort(arr, size);
 }
