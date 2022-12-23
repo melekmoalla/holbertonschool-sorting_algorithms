@@ -26,7 +26,6 @@ int partition(int *arr, int start, int end)
         }
     }
     swap(arr, i, end);
-
     return i;
 }
 
@@ -35,7 +34,6 @@ void sort(int *arr, int start, int end)
 
     if (start < end)
     {
-
         int pivot_index = partition(arr, start, end);
         sort(arr, start, pivot_index - 1);
         print_array(arr, a);
@@ -46,6 +44,9 @@ void sort(int *arr, int start, int end)
 void quick_sort(int *arr, size_t size)
 {
     a = size;
-
+    if (arr == NULL)
+    {
+        return;
+    }
     sort(arr, 0, size - 1);
 }
