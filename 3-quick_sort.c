@@ -4,7 +4,7 @@
 #include <assert.h>
 #include <stdio.h>
 
-void quick_sort(int *arr, size_t size)
+void quickk_sort(int *arr, size_t size)
 {
 	for (size_t i = 0; i < size - 3; i++)
 	{
@@ -23,4 +23,8 @@ void quick_sort(int *arr, size_t size)
 		arr[min_index] = temp;
 		print_array(arr, size);
 	}
+}
+void quick_sort(int *arr, size_t size)
+{
+	quickk_sort(arr, size);
 }
