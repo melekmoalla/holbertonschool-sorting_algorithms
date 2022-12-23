@@ -12,7 +12,6 @@
 #include <string.h>
 #include <signal.h>
 
-int temp;
 
 /**
  * struct listint_s - Doubly linked list node
