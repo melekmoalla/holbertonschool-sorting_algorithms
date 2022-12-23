@@ -4,10 +4,11 @@
 #include <assert.h>
 
 size_t a;
+int temp;
 
 void swap(int *arr, int i, int j)
 {
-    int temp = arr[i];
+    temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
 }
@@ -22,10 +23,14 @@ int partition(int *arr, int start, int end)
         if (arr[j] < pivot)
         {
             swap(arr, i, j);
+            if (arr[i] != temp)
+                print_array(arr, a);
             i++;
         }
     }
     swap(arr, i, end);
+    if (arr[i] != temp)
+        print_array(arr, a);
     return i;
 }
 
@@ -36,7 +41,6 @@ void sort(int *arr, int start, int end)
     {
         int pivot_index = partition(arr, start, end);
         sort(arr, start, pivot_index - 1);
-        print_array(arr, a);
         sort(arr, pivot_index + 1, end);
     }
 }
