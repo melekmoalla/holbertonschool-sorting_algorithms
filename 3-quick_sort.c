@@ -1,16 +1,16 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include "sort.h"
-#include <assert.h>
-#include <stdio.h>
 
 void quickk_sort(int *arr, size_t size)
 {
-	for (size_t i = 0; i < size - 3; i++)
+	size_t i, j;
+
+	for (i = 0; i < size - 3; i++)
 	{
 		// Find the minimum element in the unsorted portion of the list
 		int min_index = i;
-		for (size_t j = i + 1; j < size; j++)
+		for (j = i + 1; j < size; j++)
 		{
 			if (arr[j] < arr[min_index])
 			{
