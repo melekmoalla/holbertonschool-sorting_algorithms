@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include "sort.h"
 #include <assert.h>
-size_t a;
-int temp;
 
 /**
  * swap - fonction that do swap betwen to integer
@@ -38,6 +36,7 @@ int partition(int *arr, int start, int end)
 		if (arr[j] < pivot)
 		{
 			swap(arr, i, j);
+
 			i++;
 		}
 	}
@@ -75,6 +74,7 @@ void sort(int *arr, int start, int end)
 void quick_sort(int *arr, size_t size)
 {
 	a = size;
-
+	if (arr == NULL)
+		return;
 	sort(arr, 0, size - 1);
 }

@@ -12,6 +12,9 @@
 #include <string.h>
 #include <signal.h>
 
+size_t a;
+int temp;
+
 /**
  * struct listint_s - Doubly linked list node
  *
