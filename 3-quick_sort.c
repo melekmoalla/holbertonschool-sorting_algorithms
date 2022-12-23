@@ -29,7 +29,7 @@ void quickk_sort(int *arr, size_t size)
 }
 void quick_sort(int *arr, size_t size)
 {
-	if (arr == NULL)
+	if (arr == NULL || size < 2)
 		return;
 	quickk_sort(arr, size);
 }
